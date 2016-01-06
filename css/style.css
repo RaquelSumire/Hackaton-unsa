@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#timeline{
+	background: #fff;
+	font-family: Georgia, serif;
+	color: #000;
+	font-size: 14px;
+	width: 850px;
+	height: 400px;
+	overflow: hidden;
+	margin: 30px auto;
+	position: relative;
+	background: url('../img/dot.gif') left 45px repeat-x;
+}
+/*MENU DE FECHAS*/
+#dates {
+	width: 800px;
+	height: 60px;
+	overflow: hidden;
+}
+#dates li {
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 50px;
+	font-size: 24px;
+	text-align: center;
+	background: url('../img/biggerdot.png') center bottom no-repeat;
+}
+#dates a {
+	line-height: 38px;
+	padding-bottom: 10px;
+}
+#dates .selected {
+    font-size: 38px;
+}
+a {
+	color: #ffcc00;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+a:hover, a.selected {
+	color: #ED9819;
+	text-decoration: none;
+}
+h1 {
+	font-size: 18px;
+	text-align: center;
+	color: #ED9819;
+	margin-bottom: 5px;
+}
+/*CONTENIDO DE SLIDER*/
+#issues {
+	width: 840px;
+	height: 390px;
+	overflow: hidden;
+}	
+#issues li {
+	width: 840px;
+	height: 390px;
+	list-style: none;
+	float: left;
+}
+#issues li.selected img {
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+#issues li img {
+	float: left;
+	margin: 10px 30px 10px 50px;
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+	zoom: 0.5;
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out; 
+	transition: all 2s ease-in-out;
+	-webkit-transform: scale(0.7,0.7);
+	-moz-transform: scale(0.7,0.7);
+    -o-transform: scale(0.7,0.7);
+    -ms-transform: scale(0.7,0.7);
+    transform: scale(0.7,0.7);
+}
+#issues li h1 {
+	color: #ED9819;
+	font-size: 48px;
+	margin: 20px 0;
+	
+}
+#issues li p {
+	font-size: 14px;
+	margin-right: 50px;
+	font-weight: normal;
+	line-height: 22px;			
+}
+/*BOTONES*/
+#next, #prev {
+	position: absolute;
+	font-size: 70px;
+	top: 170px;
+	width: 22px;
+	height: 38px;
+	overflow: hidden;
+}
+#next:hover, #prev:hover {
+	background-position: 0 -76px;
+}
+#next {
+	right: 0;
+	background-image: url('../img/next.png');
+}
+#prev {
+	left: 0;
+	background-image: url('../img/prev.png');
+}

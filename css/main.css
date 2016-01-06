@@ -1,0 +1,179 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	color: #555555;
+	text-align: justify;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+.row {
+	margin: 0;
+}
+.container>div {
+	margin: 10px 0;
+}
+/* ICONOS */
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?r6j4i0');
+	src:url('../fonts/icomoon.eot?r6j4i0#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?r6j4i0') format('truetype'),
+		url('../fonts/icomoon.woff?r6j4i0') format('woff'),
+		url('../fonts/icomoon.svg?r6j4i0#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1.5;
+	font-size: 30px;
+	color: whitesmoke;
+}
+
+.icon-home:before {
+	content: "\e900";
+}
+.icon-books:before {
+	content: "\e901";
+}
+.icon-library:before {
+	content: "\e902";
+}
+.icon-envelop:before {
+	content: "\e906";
+}
+.icon-clipboard:before {
+	content: "\e903";
+}
+.icon-earth:before {
+	content: "\e904";
+}
+.icon-facebook:before {
+	content: "\e905";
+}
+/* HEADER */
+.logo {
+	width: 290px;
+	margin: 0 -15px;
+}
+.login {
+	padding: 15px 15px 15px 35px;
+	background: #EFECE7;
+}
+.login img{
+	max-width: 15px;
+}
+.login p {
+	background: white;
+	color: grey;
+	width: 30%;
+	display: inline-block;
+	padding: 3px 5px;
+	margin: 3px;
+}
+.login .boton {
+	background: #555555;
+	color: white;
+	width: 20%;
+	text-align: center;
+}
+.aviso {
+	background: rgba(0,0,0,.6);
+	color:#FFF;
+	opacity: 0;
+	margin-top: -45px;
+	transition: all 0.5s;
+	height: 100%;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 99;
+	position: relative;
+}
+.login-container:hover .aviso {
+	opacity: 1;
+}
+/* MENU */
+.list-nav{ text-align: center; margin: 0; padding: 5px; background: #ED9819; }
+.list-nav li{ margin: 5px; display: inline-block; }
+.list-nav a{ display: block; padding: 5px 20px; text-decoration: none; 
+			text-transform: uppercase; transition: all 0.3s; color: whitesmoke; border: solid 1px #F3B860; }
+.list-nav a:hover, .list-nav a:focus, .list-nav a.active{ outline: none; background: whitesmoke; 
+			border: solid 1px #FFF; color: #ED9819; }
+.list-nav a:hover div, .list-nav a:focus div, .list-nav a.active div { color: #ED9819; }
+
+
+/* CARRERAS */
+.carreras {
+	padding: 1px;
+	text-align: center;
+	background: url("../img/bg_carreras.jpg");
+	background-size: cover;
+}
+.carreras a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	opacity: 0.5;
+	transition: all 0.3s;
+	transform: scale(0.9);
+	color: #555555;
+}
+.carreras a:hover, .carreras a:focus {
+	opacity: 1;
+	transform: scale(1);
+	outline: none;
+}
+/* CONTACTO */
+.contacto {
+	padding: 1px;
+	background: #95917F;
+	text-align: center;
+	color: white;
+}
+.contacto a {
+	text-decoration: none;
+}
+/* ADMISION */
+.admision img {
+	width: 100%;
+	margin: 15px;
+}
+.admision {
+	background-color: #EFECE7;
+	padding: 1px 20px;
+}
+/* CONTACTO: UBICACION */
+.ubicacion {
+	padding: 1px;
+	background-color: #EFECE7;
+}
+.ubicacion p {
+	padding: 10px 20px;
+}
+iframe {
+	margin-bottom: 20px;
+}
+/* QUIENES SOMOS */
+.institucion{
+	width: 1140px;
+	margin: 0px;
+	padding: 0px;
+}
+.organigrama {
+	width: 60%;
+	margin: 10px 20%;
+}
+/* IMAGENES CARRERAS */
+.img-carrera {
+	width: 1140px;
+	margin: 0px;
+}
